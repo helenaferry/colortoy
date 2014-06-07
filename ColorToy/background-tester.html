@@ -8,20 +8,41 @@
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
-    <div id="get-url">
-        <form id="get-url-form" action="#">
-            <fieldset>
-                <legend>Give us the url</legend>
-                <div class="input-append">
-                    <input id="bg-url" name="bg-url" type="url" class="span2 form-control" />
-                    <button id="bg-url-btn" class="btn" type="button">Go!</button>
-                </div>
-            </fieldset>
-        </form>
+    <div class=".container">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <a class="brand" href="#">Color Toy</a>
+                <ul class="nav">
+                    <li class="active"><a href="#">Background tester</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="get-url">
+            <span style="float: right" class="glyphicon glyphicon-move"></span>
+
+            <form id="get-url-form" action="#">
+                <fieldset>
+                    <legend>Give us the url</legend>
+
+                    <div class="input-group">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-link"></span></span>
+                        <input id="bg-url" type="url" class="form-control" placeholder="Background url..." name="bg-url">
+                        <span class="input-group-btn">
+                            <button id="bg-url-button" class="btn btn-default" type="button">Go!</button>
+                        </span>
+                    </div>
+
+                </fieldset>
+            </form>
+
+        </div>
+
+
+
+        <p id="now-using">
+            Now using: <span id="url">white background</span>
+        </p>
     </div>
-    <p id="now-using">
-        Now using: <span id="url">white background</span>
-    </p>
     <script src="Scripts/jquery-2.1.1.min.js"></script>
     <script src="Scripts/jquery-ui-1.10.4.min.js"></script>
     <script src="background-tester.js"></script>

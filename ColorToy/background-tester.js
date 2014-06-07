@@ -8,7 +8,7 @@
         $("body").css("background", "url('" + url + "')");
     });
 
-    $("#bg-url-btn").on("click", function () {
+    $("#bg-url-button").on("click", function (e) {
         $("#get-url-form").submit();
     });
 });
