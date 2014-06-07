@@ -1,8 +1,14 @@
 ﻿$(document).ready(function () {
     $("#get-url").draggable();
 
-    $("#bg-url").on("change", function () {
-        $("#url").html("<a href='" + this.value + "'>" + this.value + "</a>");
-        $("body").css("background", "url('" + this.value + "')");
+    $("#get-url-form").on("submit", function (e) {
+        var url = $("#bg-url").val();
+        e.preventDefault();
+        $("#url").html("<a href='" + url + "'>" + url + "</a>");
+        $("body").css("background", "url('" + url + "')");
+    });
+
+    $("#bg-url-btn").on("click", function () {
+        $("#get-url-form").submit();
     });
 });
