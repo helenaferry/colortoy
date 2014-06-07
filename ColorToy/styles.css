@@ -1,0 +1,20 @@
+﻿body {
+  background: url('file:///C:/Users/sehelfer/Pictures/black-blue-bird-background.gif'); }
+
+.container {
+  width: 100%; }
+
+#now-using {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid black;
+  position: fixed;
+  bottom: 0; }
+
+#get-url {
+  border: 1px solid black;
+  background-color: white;
+  width: 300px;
+  padding: 20px; }
+
+/*# sourceMappingURL=styles.css.map */
