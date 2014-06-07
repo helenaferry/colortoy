@@ -3,6 +3,7 @@
 
     $("#get-url-form").on("submit", function (e) {
         var url = $("#bg-url").val();
+        $("#bg-url").val('');
         e.preventDefault();
         $("#url").html("<a href='" + url + "'>" + url + "</a>");
         $("body").css("background", "url('" + url + "')");
